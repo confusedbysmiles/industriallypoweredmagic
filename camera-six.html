@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Camera Six — Industrially Powered Magic</title>
+  <meta name="description" content="Camera Six — a standalone urban-fantasy / quiet supernatural horror novel by Patrick &amp; Sam Seim. Don&rsquo;t look away. Available on Amazon Kindle.">
+
+  <meta property="og:type" content="book">
+  <meta property="og:site_name" content="Industrially Powered Magic">
+  <meta property="og:title" content="Camera Six — Patrick &amp; Sam Seim">
+  <meta property="og:description" content="Quiet supernatural horror. They feed on the moments you look away. Don&rsquo;t look away.">
+  <meta property="og:image" content="images/cover-camera-six.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;1,400&amp;family=Zilla+Slab:wght@500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===== SHARED HEADER (keep identical across pages) ===== -->
+  <header class="site-header">
+    <div class="wrap site-header__inner" data-open="false">
+      <a class="brand" href="index.html">
+        <img class="brand__logo" src="images/ipm-logo.png" alt="Industrially Powered Magic logo" width="44" height="44">
+        <span class="brand__name">Industrially Powered Magic<span>Patrick &amp; Sam Seim</span></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle__bars" aria-hidden="true"></span> Menu
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="clean-breath.html">The Clean Breath</a></li>
+          <li><a href="camera-six.html" aria-current="page">Camera Six</a></li>
+          <li><a href="consent-engine.html">The Consent Engine</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- ===== /SHARED HEADER ===== -->
+
+  <main id="main">
+    <section class="section">
+      <div class="wrap">
+        <div class="book-layout">
+
+          <div class="book-cover-col">
+            <img class="cover cover--framed" src="images/cover-camera-six.jpg" alt="Cover placeholder for Camera Six by Patrick and Sam Seim" width="300" height="480">
+            <p class="book-meta">
+              <strong>Standalone novel</strong><br>
+              by Patrick &amp; Sam Seim<br>
+              Urban fantasy / supernatural horror<br>
+              Amazon Kindle exclusive
+            </p>
+          </div>
+
+          <div>
+            <p class="eyebrow">Camera Six</p>
+            <h1>Don&rsquo;t look away.</h1>
+            <p class="tagline">Some things only exist as long as someone is willing to see them.</p>
+
+            <div class="prose">
+              <p>They live in the corners of your vision — the dead air of a parking garage at three in the morning, the edge of a crowded platform, the unwatched dark of your own hallway. They feed on the moments you look away. When they take someone, they don&rsquo;t leave a body. They leave nothing at all. The taken are erased from every memory at once, unmade so completely that no one is left to miss them.</p>
+              <p>Tim Reese has spent forty-nine years getting very good at not looking. A night-shift security guard, divorced, estranged from the daughter who gave up on him long ago, he has made disappearing into a quiet art — until the night his only friend vanishes from a room Tim was watching, and Tim is the last person alive who remembers he was ever real.</p>
+              <p>What he stumbles into is a hidden war fought with the one weapon the things in the dark cannot endure: an unflinching, believing gaze. And the city is running out of people willing to hold it. To stand against what&rsquo;s coming, a man who has spent his whole life unseen will have to learn to look — and to let himself be looked at — before the dark swallows everything, and everyone, he never let himself love.</p>
+              <p>Some things only exist as long as someone is willing to see them. So is love. So are we.</p>
+            </div>
+
+            <section class="buy" aria-labelledby="buy-heading">
+              <h2 id="buy-heading">Where to buy</h2>
+              <p class="muted">Available exclusively on Amazon Kindle.</p>
+              <!-- PLACEHOLDER RETAILER LINK — replace href="#" with the real Amazon URL -->
+              <ul class="retailers">
+                <li><a class="btn btn--primary" href="#">Buy on Amazon</a></li>
+              </ul>
+            </section>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== SHARED FOOTER (keep identical across pages) ===== -->
+  <footer class="site-footer">
+    <div class="wrap site-footer__inner">
+      <span>&copy; 2026 Industrially Powered Magic</span>
+      <span class="sep" aria-hidden="true">·</span>
+      <span>Patrick &amp; Sam Seim</span>
+      <span class="sep" aria-hidden="true">·</span>
+      <a href="mailto:support@industriallypoweredmagic.com">support@industriallypoweredmagic.com</a>
+      <span class="sep" aria-hidden="true">·</span>
+      <a href="https://samseim.substack.com/">Substack</a>
+      <span class="sep" aria-hidden="true">·</span>
+      <a href="https://www.instagram.com/industriallypoweredmagic/">Instagram</a>
+    </div>
+  </footer>
+  <!-- ===== /SHARED FOOTER ===== -->
+
+  <!-- Progressive enhancement: mobile nav toggle only. Keep identical across pages. -->
+  <script>
+    (function () {
+      var inner = document.querySelector('.site-header__inner');
+      var btn = document.querySelector('.nav-toggle');
+      if (!btn || !inner) return;
+      btn.addEventListener('click', function () {
+        var open = inner.getAttribute('data-open') === 'true';
+        inner.setAttribute('data-open', String(!open));
+        btn.setAttribute('aria-expanded', String(!open));
+      });
+    })();
+  </script>
+</body>
+</html>

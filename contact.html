@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — Industrially Powered Magic</title>
+  <meta name="description" content="Contact Industrially Powered Magic — email Patrick &amp; Sam Seim, find them on Substack, or reach the imprint by mail.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Industrially Powered Magic">
+  <meta property="og:title" content="Contact — Industrially Powered Magic">
+  <meta property="og:description" content="Email Patrick &amp; Sam Seim, find them on Substack, or reach the imprint by mail.">
+  <meta property="og:image" content="images/ipm-logo.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;1,400&amp;family=Zilla+Slab:wght@500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===== SHARED HEADER (keep identical across pages) ===== -->
+  <header class="site-header">
+    <div class="wrap site-header__inner" data-open="false">
+      <a class="brand" href="index.html">
+        <img class="brand__logo" src="images/ipm-logo.png" alt="Industrially Powered Magic logo" width="44" height="44">
+        <span class="brand__name">Industrially Powered Magic<span>Patrick &amp; Sam Seim</span></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle__bars" aria-hidden="true"></span> Menu
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="clean-breath.html">The Clean Breath</a></li>
+          <li><a href="camera-six.html">Camera Six</a></li>
+          <li><a href="consent-engine.html">The Consent Engine</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- ===== /SHARED HEADER ===== -->
+
+  <main id="main">
+    <section class="section">
+      <div class="wrap">
+        <p class="eyebrow">Contact</p>
+        <h1>Get in touch</h1>
+        <p class="lede">No forms, no funnels — just the direct ways to reach Industrially Powered Magic.</p>
+
+        <ul class="contact-list">
+          <li>
+            <span class="label">Email</span>
+            <span class="value"><a href="mailto:support@industriallypoweredmagic.com">support@industriallypoweredmagic.com</a></span>
+          </li>
+          <li>
+            <span class="label">Mail</span>
+            <!-- MAILING ADDRESS PLACEHOLDER — replace this block with the real PO Box when assigned -->
+            <span class="value muted">PO Box — coming soon</span>
+          </li>
+          <li>
+            <span class="label">Substack</span>
+            <span class="value"><a href="https://samseim.substack.com/">samseim.substack.com</a></span>
+          </li>
+          <li>
+            <span class="label">Instagram</span>
+            <span class="value"><a href="https://www.instagram.com/industriallypoweredmagic/">@industriallypoweredmagic</a></span>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== SHARED FOOTER (keep identical across pages) ===== -->
+  <footer class="site-footer">
+    <div class="wrap site-footer__inner">
+      <span>&copy; 2026 Industrially Powered Magic</span>
+      <span class="sep" aria-hidden="true">·</span>
+      <span>Patrick &amp; Sam Seim</span>
+      <span class="sep" aria-hidden="true">·</span>
+      <a href="mailto:support@industriallypoweredmagic.com">support@industriallypoweredmagic.com</a>
+      <span class="sep" aria-hidden="true">·</span>
+      <a href="https://samseim.substack.com/">Substack</a>
+      <span class="sep" aria-hidden="true">·</span>
+      <a href="https://www.instagram.com/industriallypoweredmagic/">Instagram</a>
+    </div>
+  </footer>
+  <!-- ===== /SHARED FOOTER ===== -->
+
+  <!-- Progressive enhancement: mobile nav toggle only. Keep identical across pages. -->
+  <script>
+    (function () {
+      var inner = document.querySelector('.site-header__inner');
+      var btn = document.querySelector('.nav-toggle');
+      if (!btn || !inner) return;
+      btn.addEventListener('click', function () {
+        var open = inner.getAttribute('data-open') === 'true';
+        inner.setAttribute('data-open', String(!open));
+        btn.setAttribute('aria-expanded', String(!open));
+      });
+    })();
+  </script>
+</body>
+</html>
