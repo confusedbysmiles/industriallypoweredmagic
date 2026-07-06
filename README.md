@@ -2,7 +2,7 @@
 
 Source for [industriallypoweredmagic.com](https://industriallypoweredmagic.com), the home of Industrially Powered Magic: speculative fiction by Patrick & Sam Seim.
 
-Plain HTML and CSS, no build step. What's in the repo is exactly what gets served.
+Plain HTML and CSS, no build step. What's in the repo is exactly what gets served. Live since July 2026.
 
 ## Structure
 
