@@ -17,7 +17,17 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;1,400&amp;family=Zilla+Slab:wght@500;600;700&amp;display=swap" rel="stylesheet">
+  <!-- Fonts for the embedded cover art (matches the print cover) -->
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    /* Embedded Consent Engine cover — scaled 1:1 from the print front panel (612.5×925) */
+    .ce-cover { width: 300px; height: 453px; margin: 0 auto 2rem; overflow: hidden; border-radius: 4px;
+      box-shadow: 0 18px 40px rgba(20,16,10,0.28); border: 1px solid rgba(20,16,10,0.12); }
+    .ce-cover__scale { width: 612.5px; height: 925px; transform: scale(0.48979); transform-origin: top left; }
+    .ce-cover__panel { width: 612.5px; height: 925px; position: relative; overflow: hidden; background: oklch(0.955 0.012 85); }
+  </style>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -48,17 +58,43 @@
   <main id="main">
     <section class="hero">
       <div class="wrap teaser">
+
+        <!-- ===== Embedded cover art (from Consent Engine Cover Final-print) ===== -->
+        <div class="ce-cover" role="img" aria-label="Cover of The Consent Engine, Book One of the Consent Engine Trilogy by Sam and Patrick Seim">
+          <div class="ce-cover__scale">
+            <div class="ce-cover__panel">
+              <svg viewBox="0 0 600 900" preserveAspectRatio="none" style="position:absolute; inset:0; width:100%; height:100%;" aria-hidden="true">
+                <polyline points="358,0 352,214 362,318 349,472 360,606 351,758 356,900" fill="none" stroke="oklch(0.55 0.11 60)" stroke-width="1.1"></polyline>
+              </svg>
+              <div style="position:absolute; inset:0; padding:77px 72.5px 64px 60px; display:flex; flex-direction:column;">
+                <div style="font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:0.22em; color:oklch(0.5 0.05 65);">OFFICE OF CONTINUED CARE</div>
+                <div style="font-family:Newsreader,serif; font-style:italic; font-weight:300; font-size:22.5px; line-height:1.52; color:oklch(0.38 0.03 60); margin-top:26px; max-width:400px; text-wrap:pretty;">We&rsquo;re sorry. Nothing has been taken that you would have chosen to keep. What you valued will be preserved. You&rsquo;ll be looked after. You were always going to be looked after.</div>
+                <div style="flex:1;"></div>
+                <div style="position:relative; width:480px;">
+                  <div style="font-family:Newsreader,serif; font-weight:400; font-size:104px; line-height:1.0; letter-spacing:0.005em; visibility:hidden;">The<br>Consent<br>Engine</div>
+                  <div style="position:absolute; inset:0; font-family:Newsreader,serif; font-weight:400; font-size:104px; line-height:1.0; letter-spacing:0.005em; color:oklch(0.24 0.02 60); clip-path:polygon(0% 0%, 61% 0%, 60% 33%, 62% 66%, 61% 100%, 0% 100%);" aria-hidden="true">The<br>Consent<br>Engine</div>
+                  <div style="position:absolute; inset:0; transform:translateY(12px); font-family:Newsreader,serif; font-weight:400; font-size:104px; line-height:1.0; letter-spacing:0.005em; color:oklch(0.24 0.02 60); clip-path:polygon(61% 0%, 100% 0%, 100% 100%, 61% 100%, 62% 66%, 60% 33%);">The<br>Consent<br>Engine</div>
+                </div>
+                <div style="width:56px; height:2px; background:oklch(0.62 0.13 65); margin:34px 0 30px;"></div>
+                <div style="font-family:'IBM Plex Mono',monospace; font-size:13px; letter-spacing:0.2em; color:oklch(0.45 0.03 60);">SAM &amp; PATRICK SEIM</div>
+                <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.14em; color:oklch(0.58 0.04 62); margin-top:12px;">BOOK ONE OF THE CONSENT ENGINE TRILOGY</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ===== /Embedded cover art ===== -->
+
         <p class="teaser__status">A trilogy — coming soon</p>
         <h1>The Consent Engine</h1>
-        <p class="lede">A forthcoming dystopian science fiction trilogy by Sam &amp; Patrick Seim. Book One is in progress.</p>
+        <p class="lede">Some cages don&rsquo;t lock. You re-enter them every morning, grateful.</p>
 
-        <!-- PLACEHOLDER COPY — replace with approved blurb -->
-        <p>Somewhere a machine keeps a ledger of every yes ever given, and calls it order. The people who feed it were promised that agreement, once recorded, could never be taken back — and slowly they are learning what it costs to have meant it. This is a story about the fine print of freedom, and the quiet, dangerous act of changing your mind.</p>
-        <!-- /PLACEHOLDER COPY -->
+        <p>Nneka Achebe writes apologies for a living. In the Catchment &mdash; the kindest city ever built &mdash; every harm is consented to, every loss softened before it lands, and Nneka is the best on the floor: ten thousand strangers soothed, every follow-up the same. <em>Recipient soothed. Thank you. You understood.</em></p>
+        <p>Then a dead man&rsquo;s file crosses her desk &mdash; thin where it should be dense, quiet where the city watches hardest. Marcus Reyes asked the city to stop. It granted the request, kindness by kindness, until there was nothing left holding him up.</p>
+        <p>No one refuses the Catchment. Nneka has never wanted to. But the question opens in her anyway &mdash; plain, unhurried, and entirely her own, the first thing in nine years no one arranged for her to wonder: <em>Why would a man ask the one kind thing in the world to stop?</em></p>
 
-        <div class="btn-row" style="justify-content:center;">
-          <a class="btn btn--primary" href="https://samseim.substack.com/">Get updates on Substack</a>
-        </div>
+        <p class="lede" style="margin-top:1.5rem;">Book One of the Consent Engine Trilogy by Sam &amp; Patrick Seim &mdash; in progress.</p>
+
+        <p class="muted">Check back here for updates.</p>
       </div>
     </section>
   </main>
