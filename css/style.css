@@ -171,9 +171,8 @@ a:hover { color: var(--brass-hi); text-decoration-color: var(--brass-hi); }
   width: 40px;
   height: 40px;
   object-fit: contain;
-  background: var(--ink-2);
-  border: var(--hairline);
-  border-radius: 3px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px var(--brass-dim), 0 2px 10px -4px rgba(0, 0, 0, 0.8);
 }
 .brand__name {
   font-family: var(--font-display);
@@ -266,6 +265,29 @@ a:hover { color: var(--brass-hi); text-decoration-color: var(--brass-hi); }
   max-width: 40ch;
 }
 .hero__lead--wide { max-width: 55ch; }
+
+/* Art-led hero: full workshop banner above a compact intro */
+.hero--art { padding-block: clamp(1.5rem, 4vw, 2.75rem); }
+.hero-banner {
+  margin: 0;
+  border: var(--hairline);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--shadow), 0 0 0 6px rgba(200, 150, 62, 0.05);
+}
+.hero-banner img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.hero__intro {
+  text-align: center;
+  padding-top: clamp(1.75rem, 4vw, 2.75rem);
+}
+.hero__intro .eyebrow { margin-bottom: 0.5rem; }
+.hero__intro h1 { margin-bottom: 0.25em; }
+.hero__intro .hero__lead { max-width: none; margin-inline: auto; }
+.hero__intro .btn-row { justify-content: center; }
 
 /* ---- Buttons ------------------------------------------------------------ */
 .btn {
@@ -484,6 +506,27 @@ a:hover { color: var(--brass-hi); text-decoration-color: var(--brass-hi); }
   font-style: italic;
   font-size: 0.95rem;
   color: var(--paper-dim);
+}
+
+/* ---- Feature band with dragon accent (homepage) ------------------------- */
+.feature-band {
+  display: flex;
+  align-items: center;
+  gap: clamp(1rem, 4vw, 2.5rem);
+  flex-wrap: wrap;
+}
+.feature-band__text { flex: 1 1 22ch; min-width: 0; }
+.feature-band__text p { margin-bottom: 0; }
+.feature-band__art {
+  flex: 0 0 auto;
+  width: clamp(160px, 34vw, 300px);
+  height: auto;
+  filter: drop-shadow(0 14px 26px rgba(0, 0, 0, 0.6));
+  transform: scaleX(-1);
+}
+@media (max-width: 599px) {
+  .feature-band { flex-direction: column-reverse; align-items: flex-start; }
+  .feature-band__art { width: clamp(180px, 60vw, 260px); align-self: center; }
 }
 
 /* ---- Medallion pull-quote (Camera Six) ---------------------------------- */
