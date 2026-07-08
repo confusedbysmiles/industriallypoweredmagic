@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="design_doc_mode" content="canvas">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,500;0,600;0,700;1,500&family=Spectral:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+  html,body{margin:0;background:#0d0e10;}
+  *{box-sizing:border-box;}
+  a{color:#e7b45c;text-decoration-color:#6d5324;}
+  a:hover{color:#f0c874;}
+</style>
+</helmet>
+
+<div style="min-height:100vh;background:radial-gradient(circle at 18% -8%,rgba(200,150,62,.09),transparent 45%),radial-gradient(circle at 100% 0%,rgba(200,150,62,.05),transparent 40%),#0d0e10;color:#ece7dd;font-family:'Spectral',Georgia,serif;padding:60px clamp(20px,5vw,80px) 130px;">
+
+  <!-- masthead -->
+  <div style="max-width:1120px;margin:0 auto 46px;">
+    <div style="font-family:'Zilla Slab',serif;text-transform:uppercase;letter-spacing:.24em;font-size:13px;color:#c8963e;margin-bottom:14px;">Industrially Powered Magic — Logo System</div>
+    <h1 style="font-family:'Zilla Slab',serif;font-weight:700;font-size:clamp(30px,4vw,50px);line-height:1.04;margin:0 0 16px;color:#ece7dd;letter-spacing:.01em;">The mascot mark, cleaned and kitted out</h1>
+    <p style="max-width:66ch;margin:0;color:#a49f95;font-size:17px;line-height:1.65;">Built from your Gemini emblem — background knocked out so it drops onto any surface, paired with a crisp <em style="color:#ece7dd;font-style:italic;">Zilla&nbsp;Slab</em> wordmark to match the site. Sam casts the current; Shard rides the wicker dragon it powers; the pun rides the gear. Everything below is the same source art in the contexts you'll actually use.</p>
+  </div>
+
+  <!-- ============ PRIMARY (reversed / dark) ============ -->
+  <section style="max-width:1120px;margin:0 auto;">
+    <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:16px;">
+      <span style="font-family:'Zilla Slab',serif;font-weight:600;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#c8963e;">01</span>
+      <h2 style="font-family:'Zilla Slab',serif;font-weight:600;font-size:22px;margin:0;color:#ece7dd;">Primary badge — on dark</h2>
+    </div>
+    <div style="border:1px solid #1e2126;border-radius:14px;background:linear-gradient(#141619,#0f1114);box-shadow:0 24px 60px -30px rgba(0,0,0,.9);padding:56px;display:flex;justify-content:center;align-items:center;">
+      <img src="images/logo-badge.png" alt="IPM mascot badge" style="width:min(460px,72vw);height:auto;filter:drop-shadow(0 18px 34px rgba(0,0,0,.55));">
+    </div>
+    <p style="margin:14px 2px 0;color:#6d6a63;font-size:13.5px;font-style:italic;">The workhorse. Sits directly on the site's near-black header (#0d0e10). Full colour, no plate needed.</p>
+  </section>
+
+  <!-- ============ ON LIGHT ============ -->
+  <section style="max-width:1120px;margin:64px auto 0;">
+    <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:16px;">
+      <span style="font-family:'Zilla Slab',serif;font-weight:600;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#c8963e;">02</span>
+      <h2 style="font-family:'Zilla Slab',serif;font-weight:600;font-size:22px;margin:0;color:#ece7dd;">Primary badge — on parchment</h2>
+    </div>
+    <div style="border:1px solid #1e2126;border-radius:14px;background:radial-gradient(135% 130% at 50% 20%,#f6f0e4 0%,#ece2d0 55%,#dccdb3 100%);box-shadow:0 24px 60px -30px rgba(0,0,0,.9);padding:56px;display:flex;justify-content:center;align-items:center;">
+      <img src="images/logo-badge.png" alt="IPM mascot badge on light" style="width:min(460px,72vw);height:auto;filter:drop-shadow(0 16px 26px rgba(80,55,20,.28));">
+    </div>
+    <p style="margin:14px 2px 0;color:#6d6a63;font-size:13.5px;font-style:italic;">Same file, unchanged — the knocked-out background means it reads on the cream book pages too.</p>
+  </section>
+
+  <!-- ============ HORIZONTAL LOCKUP ============ -->
+  <section style="max-width:1120px;margin:64px auto 0;">
+    <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:16px;">
+      <span style="font-family:'Zilla Slab',serif;font-weight:600;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#c8963e;">03</span>
+      <h2 style="font-family:'Zilla Slab',serif;font-weight:600;font-size:22px;margin:0;color:#ece7dd;">Horizontal lockup — badge + wordmark</h2>
+    </div>
+
+    <!-- dark lockup -->
+    <div style="border:1px solid #1e2126;border-radius:14px;background:linear-gradient(#141619,#0f1114);box-shadow:0 24px 60px -30px rgba(0,0,0,.9);padding:44px 54px;display:flex;align-items:center;gap:36px;flex-wrap:wrap;justify-content:center;">
+      <img src="images/logo-badge.png" alt="IPM badge" style="width:172px;height:auto;flex:0 0 auto;filter:drop-shadow(0 12px 22px rgba(0,0,0,.5));">
+      <div style="flex:0 1 auto;border-left:2px solid #6d5324;padding-left:34px;">
+        <div style="font-family:'Zilla Slab',serif;font-weight:700;font-size:46px;line-height:.96;color:#e7b45c;letter-spacing:.005em;">INDUSTRIALLY</div>
+        <div style="display:flex;align-items:center;gap:12px;">
+          <div style="font-family:'Zilla Slab',serif;font-weight:700;font-size:46px;line-height:.98;color:#e7b45c;letter-spacing:.005em;">POWERED MAGIC</div>
+          <svg viewBox="0 0 24 24" width="30" height="30" style="filter:drop-shadow(0 0 6px rgba(127,216,255,.8));"><polygon points="13,2 4,14 11,14 9,22 20,9 12,9" fill="#7fd8ff" stroke="#0d0e10" stroke-width="1.1"/></svg>
+        </div>
+        <div style="font-family:'Spectral',serif;font-style:italic;font-size:16px;color:#a49f95;margin-top:12px;letter-spacing:.01em;">Speculative fiction by Patrick &amp; Sam Seim</div>
+      </div>
+    </div>
+
+    <!-- light lockup -->
+    <div style="border:1px solid #1e2126;border-radius:14px;background:radial-gradient(135% 130% at 50% 20%,#f6f0e4 0%,#ece2d0 55%,#dccdb3 100%);box-shadow:0 24px 60px -30px rgba(0,0,0,.9);padding:44px 54px;margin-top:22px;display:flex;align-items:center;gap:36px;flex-wrap:wrap;justify-content:center;">
+      <img src="images/logo-badge.png" alt="IPM badge" style="width:172px;height:auto;flex:0 0 auto;filter:drop-shadow(0 12px 20px rgba(80,55,20,.25));">
+      <div style="flex:0 1 auto;border-left:2px solid #c8963e;padding-left:34px;">
+        <div style="font-family:'Zilla Slab',serif;font-weight:700;font-size:46px;line-height:.96;color:#8a5a1e;letter-spacing:.005em;">INDUSTRIALLY</div>
+        <div style="display:flex;align-items:center;gap:12px;">
+          <div style="font-family:'Zilla Slab',serif;font-weight:700;font-size:46px;line-height:.98;color:#8a5a1e;letter-spacing:.005em;">POWERED MAGIC</div>
+          <svg viewBox="0 0 24 24" width="30" height="30" style="filter:drop-shadow(0 0 3px rgba(60,150,210,.5));"><polygon points="13,2 4,14 11,14 9,22 20,9 12,9" fill="#3aa0d8" stroke="#3c2c11" stroke-width="1.1"/></svg>
+        </div>
+        <div style="font-family:'Spectral',serif;font-style:italic;font-size:16px;color:#6d5324;margin-top:12px;letter-spacing:.01em;">Speculative fiction by Patrick &amp; Sam Seim</div>
+      </div>
+    </div>
+    <p style="margin:14px 2px 0;color:#6d6a63;font-size:13.5px;font-style:italic;">For site headers, letterhead, and email signatures. Wordmark is live text (Zilla Slab 700), so it stays razor-sharp at any size — not baked into the art.</p>
+  </section>
+
+  <!-- ============ AVATAR / FAVICON ============ -->
+  <section style="max-width:1120px;margin:64px auto 0;">
+    <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:16px;">
+      <span style="font-family:'Zilla Slab',serif;font-weight:600;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#c8963e;">04</span>
+      <h2 style="font-family:'Zilla Slab',serif;font-weight:600;font-size:22px;margin:0;color:#ece7dd;">Avatar &amp; favicon crops</h2>
+    </div>
+    <div style="border:1px solid #1e2126;border-radius:14px;background:linear-gradient(#141619,#0f1114);box-shadow:0 24px 60px -30px rgba(0,0,0,.9);padding:48px;display:flex;align-items:flex-end;gap:44px;flex-wrap:wrap;justify-content:center;">
+      <div style="text-align:center;">
+        <div style="width:132px;height:132px;border-radius:50%;overflow:hidden;background:radial-gradient(circle at 50% 35%,#f2cd7d,#c8963e 55%,#6d5023 100%);border:3px solid #3c2c11;box-shadow:0 10px 22px -8px rgba(0,0,0,.6);display:flex;align-items:center;justify-content:center;">
+          <img src="images/logo-badge.png" alt="avatar 132" style="width:150%;height:auto;transform:translateY(3%);">
+        </div>
+        <div style="font-family:'Zilla Slab',serif;font-size:12px;letter-spacing:.1em;color:#a49f95;margin-top:12px;">132 · profile</div>
+      </div>
+      <div style="text-align:center;">
+        <div style="width:72px;height:72px;border-radius:50%;overflow:hidden;background:radial-gradient(circle at 50% 35%,#f2cd7d,#c8963e 55%,#6d5023 100%);border:2px solid #3c2c11;box-shadow:0 8px 16px -6px rgba(0,0,0,.6);display:flex;align-items:center;justify-content:center;">
+          <img src="images/logo-badge.png" alt="avatar 72" style="width:150%;height:auto;transform:translateY(3%);">
+        </div>
+        <div style="font-family:'Zilla Slab',serif;font-size:12px;letter-spacing:.1em;color:#a49f95;margin-top:12px;">72 · header</div>
+      </div>
+      <div style="text-align:center;">
+        <div style="width:40px;height:40px;border-radius:50%;overflow:hidden;background:radial-gradient(circle at 50% 35%,#f2cd7d,#c8963e 55%,#6d5023 100%);border:2px solid #3c2c11;box-shadow:0 6px 12px -5px rgba(0,0,0,.6);display:flex;align-items:center;justify-content:center;">
+          <img src="images/logo-badge.png" alt="favicon 40" style="width:150%;height:auto;transform:translateY(3%);">
+        </div>
+        <div style="font-family:'Zilla Slab',serif;font-size:12px;letter-spacing:.1em;color:#a49f95;margin-top:12px;">40 · favicon</div>
+      </div>
+    </div>
+    <p style="margin:14px 2px 0;color:#6d6a63;font-size:13.5px;font-style:italic;">The full scene holds up as an avatar down to ~64px. Below that the detail muddies — if you want a true 16–32px favicon, I'd cut a simplified gear-and-lightning glyph from the same palette. Say the word.</p>
+  </section>
+
+  <!-- ============ CLEAN FAVICON GLYPH ============ -->
+  <section style="max-width:1120px;margin:64px auto 0;">
+    <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:16px;">
+      <span style="font-family:'Zilla Slab',serif;font-weight:600;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#c8963e;">05</span>
+      <h2 style="font-family:'Zilla Slab',serif;font-weight:600;font-size:22px;margin:0;color:#ece7dd;">Clean favicon glyph</h2>
+    </div>
+    <div style="border:1px solid #1e2126;border-radius:14px;background:linear-gradient(#141619,#0f1114);box-shadow:0 24px 60px -30px rgba(0,0,0,.9);padding:48px;display:flex;align-items:flex-end;gap:48px;flex-wrap:wrap;justify-content:center;">
+      <div style="text-align:center;">
+        <img src="images/favicon-512.png" alt="favicon glyph large" style="width:150px;height:150px;filter:drop-shadow(0 12px 22px rgba(0,0,0,.55));">
+        <div style="font-family:'Zilla Slab',serif;font-size:12px;letter-spacing:.1em;color:#a49f95;margin-top:14px;">512 · master</div>
+      </div>
+      <div style="text-align:center;">
+        <img src="images/favicon-64.png" alt="favicon glyph 64" style="width:64px;height:64px;image-rendering:auto;">
+        <div style="font-family:'Zilla Slab',serif;font-size:12px;letter-spacing:.1em;color:#a49f95;margin-top:14px;">64 · tab</div>
+      </div>
+      <div style="text-align:center;">
+        <img src="images/favicon-32.png" alt="favicon glyph 32" style="width:32px;height:32px;">
+        <div style="font-family:'Zilla Slab',serif;font-size:12px;letter-spacing:.1em;color:#a49f95;margin-top:14px;">32 · actual</div>
+      </div>
+      <div style="text-align:center;display:flex;flex-direction:column;align-items:center;">
+        <div style="display:flex;align-items:center;gap:7px;background:#f6f0e4;border:1px solid #d8c8ad;border-radius:6px;padding:5px 10px 5px 6px;box-shadow:0 6px 14px -8px rgba(0,0,0,.4);">
+          <img src="images/favicon-32.png" alt="favicon in tab" style="width:16px;height:16px;">
+          <span style="font-family:'Spectral',serif;font-size:12px;color:#3c2c11;">Industrially Powered Magic</span>
+        </div>
+        <div style="font-family:'Zilla Slab',serif;font-size:12px;letter-spacing:.1em;color:#a49f95;margin-top:14px;">16 · browser tab</div>
+      </div>
+    </div>
+    <p style="margin:14px 2px 0;color:#6d6a63;font-size:13.5px;font-style:italic;">Distilled to the two things that survive at 16px: the brass gear ring and the electric-blue bolt — the pun in miniature. Exported at 512 / 180 (apple-touch) / 64 / 32. Reads on both light and dark browser chrome.</p>
+  </section>
+
+  <!-- ============ SOURCE ARTWORK ============ -->
+  <section style="max-width:1120px;margin:64px auto 0;">
+    <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:16px;">
+      <span style="font-family:'Zilla Slab',serif;font-weight:600;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#c8963e;">06</span>
+      <h2 style="font-family:'Zilla Slab',serif;font-weight:600;font-size:22px;margin:0;color:#ece7dd;">Companion artwork</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr;gap:22px;">
+      <figure style="margin:0;border:1px solid #1e2126;border-radius:12px;overflow:hidden;background:#141619;box-shadow:0 20px 46px -28px rgba(0,0,0,.9);">
+        <img src="images/gen4.png" alt="IPM character line-up" style="display:block;width:100%;height:auto;">
+        <figcaption style="padding:12px 18px;color:#a49f95;font-size:13.5px;font-style:italic;">Character line-up — Shard, Sam, and the wicker dragon. Good as an About-page hero or cast strip.</figcaption>
+      </figure>
+      <figure style="margin:0;border:1px solid #1e2126;border-radius:12px;overflow:hidden;background:#141619;box-shadow:0 20px 46px -28px rgba(0,0,0,.9);">
+        <img src="images/gen1.png" alt="IPM workshop action scene" style="display:block;width:100%;height:auto;">
+        <figcaption style="padding:12px 18px;color:#a49f95;font-size:13.5px;font-style:italic;">Workshop action scene — full-bleed banner energy for a homepage showcase.</figcaption>
+      </figure>
+    </div>
+    <p style="margin:16px 2px 0;color:#6d6a63;font-size:13.5px;font-style:italic;">These two keep Gemini's baked-in text. If you want either as a clean lockup, I can knock out the background and re-typeset the words to match, same as the badge.</p>
+  </section>
+
+  <p style="max-width:1120px;margin:44px auto 0;color:#6d6a63;font-size:13.5px;line-height:1.7;">Next steps I can take on request: an all-brass one-colour version for stamps/merch, tightening the badge's gear silhouette, clean lockups of the two companion scenes, or dropping this straight into the live site header (it currently loads <code style="color:#a49f95;">ipm-badge.png</code>).</p>
+
+</div>
+</x-dc>
+</body>
+</html>
