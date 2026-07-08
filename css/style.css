@@ -168,11 +168,10 @@ a:hover { color: var(--brass-hi); text-decoration-color: var(--brass-hi); }
   color: var(--paper);
 }
 .brand__logo {
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: auto;
   object-fit: contain;
-  border-radius: 50%;
-  box-shadow: 0 0 0 1px var(--brass-dim), 0 2px 10px -4px rgba(0, 0, 0, 0.8);
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.7));
 }
 .brand__name {
   font-family: var(--font-display);
@@ -247,7 +246,7 @@ a:hover { color: var(--brass-hi); text-decoration-color: var(--brass-hi); }
   .site-nav { display: block !important; }
   .site-nav ul { flex-direction: row; align-items: center; gap: clamp(1rem, 2.5vw, 2rem); }
   .site-nav a { padding: 0.35rem 0; }
-  .brand__logo { width: 44px; height: 44px; }
+  .brand__logo { width: 46px; }
 }
 
 /* ---- Hero --------------------------------------------------------------- */
