@@ -10,7 +10,7 @@ Plain HTML and CSS, no build step. What's in the repo is exactly what gets serve
 index.html            Homepage — who we are, what we write, the books
 clean-breath.html     The Clean Breath Pays the Debt (standalone SF)
 camera-six.html       Camera Six (standalone supernatural horror)
-consent-engine.html   The Consent Engine trilogy (forthcoming)
+consent-engine.html   The Soft Word — Book I of The Consent Engine (publishing 31 Dec 2026)
 contact.html          Email, Instagram, Substack, PO Box
 css/style.css         Single shared stylesheet (design tokens at the top)
 images/               Covers, logo/badge, artwork crops
@@ -31,7 +31,7 @@ Referenced by the site:
 
 - `ipm-badge.png` — round goblin-artificer token, header logo on every page
 - `ipm-workshop.jpg` — full workshop scene, homepage showcase
-- `cover-*.jpg` — book covers (~800 px wide JPEGs)
+- `cover-*.jpg` — book covers (~800 px wide JPEGs); `cover-soft-word.jpg` supersedes `cover-consent-engine.jpg`
 - `camera-six-banner.jpg` / `camera-six-eye.jpg` — crops from the Camera Six cover art (page hero band and medallion pull-quote)
 - `favicon.svg`
 
@@ -40,8 +40,7 @@ Referenced by the site:
 ## To-do
 
 - [ ] Replace `href="#"` buy links: The Clean Breath (wide retailers), Camera Six (Amazon Kindle)
-- [ ] Real cover art for The Consent Engine (placeholder in use)
-- [ ] Approved blurb for consent-engine.html (current copy is marked placeholder)
+- [ ] Retailer / pre-order links for The Soft Word once the store listings exist
 - [ ] PO Box on contact.html (marked with an HTML comment)
 
 ## Contact
