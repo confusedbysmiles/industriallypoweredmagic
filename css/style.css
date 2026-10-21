@@ -431,7 +431,7 @@ a:hover { color: var(--brass-hi); text-decoration-color: var(--brass-hi); }
   margin-top: 2.25rem;
 }
 @media (min-width: 640px) { .card-grid { grid-template-columns: repeat(2, 1fr); } }
-@media (min-width: 900px) { .card-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (min-width: 1060px) { .card-grid { grid-template-columns: repeat(4, 1fr); } }
 
 .book-card {
   display: flex;
