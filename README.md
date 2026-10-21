@@ -11,13 +11,14 @@ index.html            Homepage — who we are, what we write, the books
 clean-breath.html     The Clean Breath Pays the Debt (standalone SF)
 camera-six.html       Camera Six (standalone supernatural horror)
 consent-engine.html   The Soft Word — Book I of The Consent Engine (publishing 31 Dec 2026)
+experimental-class.html  Experimental Class (Patrick's LitRPG serial on Royal Road)
 contact.html          Email, Instagram, Substack, PO Box
 css/style.css         Single shared stylesheet (design tokens at the top)
 images/               Covers, logo/badge, artwork crops
 CNAME                 Custom domain for GitHub Pages — do not delete
 ```
 
-Every page duplicates the same header and footer markup. When editing either, change all five pages identically.
+Every page duplicates the same header and footer markup. When editing either, change every page identically.
 
 ## Hosting & deployment
 
@@ -31,7 +32,7 @@ Referenced by the site:
 
 - `ipm-badge.png` — round goblin-artificer token, header logo on every page
 - `ipm-workshop.jpg` — full workshop scene, homepage showcase
-- `cover-*.jpg` — book covers (~800 px wide JPEGs); `cover-soft-word.jpg` supersedes `cover-consent-engine.jpg`
+- `cover-*.jpg` — book covers (~800 px wide JPEGs; `cover-experimental-class.jpg` is 2:3, rendered from the Royal Road cover mockup); `cover-soft-word.jpg` supersedes `cover-consent-engine.jpg`
 - `camera-six-banner.jpg` / `camera-six-eye.jpg` — crops from the Camera Six cover art (page hero band and medallion pull-quote)
 - `favicon.svg`
 
