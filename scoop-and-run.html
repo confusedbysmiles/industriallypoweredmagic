@@ -37,21 +37,22 @@
       text-align: center;
       color: var(--brass-hi);
     }
-    .canon__seal { margin: 0; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; font-size: 0.9rem; }
-    .canon__q { margin: 0.6rem 0 0.9rem; color: var(--paper); font-weight: 600; font-size: 1.05rem; line-height: 1.35; }
+    .canon__seal { margin: 0; font-weight: 700; letter-spacing: 0.12em; font-size: 0.9rem; }
+    .canon__open, .canon__close { margin: 0.3rem 0 0; font-size: 0.85rem; font-style: italic; color: var(--brass); }
+    .canon__close { margin: 0.9rem 0 0; font-style: normal; letter-spacing: 0.04em; }
+    .canon__q { margin: 0.7rem 0 0.9rem; color: var(--paper); font-weight: 600; font-size: 1.05rem; line-height: 1.35; }
     .canon__btns { display: flex; justify-content: center; gap: 0.8rem; margin: 0; padding: 0; list-style: none; }
     .canon__btns li {
       margin: 0;
       padding: 0.3rem 0.9rem;
       border: 1px solid var(--brass-dim);
       border-radius: var(--r-sm);
-      font-size: 0.9rem;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
+      font-size: 0.95rem;
+      letter-spacing: 0.03em;
     }
     /* Second half of the synopsis: no second drop cap. */
     .prose--cont > p:first-of-type::first-letter { all: unset; }
-    .canon__btns .is-lit { background: var(--brass); color: var(--ink); border-color: var(--brass-hi); }
+    .canon__btns .is-lit { background: var(--brass); color: var(--ink); border-color: var(--brass-hi); font-weight: 700; }
   </style>
 </head>
 <body>
@@ -109,17 +110,19 @@
               <p>What she has left is the last running copy of the Board&rsquo;s medical system &mdash; REGIS, which nobody calls REGIS &mdash; and a provider record that says PENDING. Every port, every contract and every friendly-looking form offers to fix that.</p>
             </div>
 
-            <div class="canon" role="img" aria-label="The Canon asks: Reconcile provider records with the Canon? Assent, or Withhold. Withhold is lit.">
-              <p class="canon__seal">&#10022; The Canon &#10022;</p>
+            <div class="canon" role="img" aria-label="The Canon: Humbly Submitted, in Good Order. Reconcile Provider Records with the Canon? Assent, or Withhold. Withhold is lit. So It Is Recorded.">
+              <p class="canon__seal">&#10022;&nbsp; THE CANON &nbsp;&#10022;</p>
+              <p class="canon__open">Humbly Submitted, in Good Order</p>
               <p class="canon__q">Reconcile Provider Records with the Canon?</p>
               <ul class="canon__btns">
                 <li>[ Assent ]</li>
                 <li class="is-lit">[ Withhold ]</li>
               </ul>
+              <p class="canon__close">&#10022;&nbsp; So It Is Recorded &nbsp;&#10022;</p>
             </div>
 
             <div class="prose prose--cont">
-              <p>She presses N.</p>
+              <p>She presses Withhold.</p>
               <p class="lede"><em>A comic space opera in which two databases go to war, and one of them is called Reggie.</em></p>
             </div>
 
