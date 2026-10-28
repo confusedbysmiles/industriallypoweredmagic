@@ -12,6 +12,7 @@ clean-breath.html     The Clean Breath Pays the Debt (standalone SF)
 camera-six.html       Camera Six (standalone supernatural horror)
 consent-engine.html   The Soft Word — Book I of The Consent Engine (publishing 31 Dec 2026)
 experimental-class.html  Experimental Class (Patrick's LitRPG serial on Royal Road)
+scoop-and-run.html    Scoop and Run (Sam's comic space opera series; coming Thanksgiving–Christmas 2026)
 contact.html          Email, Instagram, Substack, PO Box
 css/style.css         Single shared stylesheet (design tokens at the top)
 images/               Covers, logo/badge, artwork crops
